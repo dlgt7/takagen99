@@ -836,7 +836,7 @@ public class HomeActivity extends BaseActivity {
             // Multi Column Selection
             int spanCount = (int) Math.floor(sites.size() / 10);
             if (spanCount <= 1) spanCount = 1;
-            if (spanCount >= 3) spanCount = 3;
+            if (spanCount >= 4) spanCount = 4;
 
             TvRecyclerView tvRecyclerView = dialog.findViewById(R.id.list);
             tvRecyclerView.setLayoutManager(new V7GridLayoutManager(dialog.getContext(), spanCount));
